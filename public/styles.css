@@ -1,0 +1,197 @@
+body {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    margin: 0;
+    background: rgb(39, 0, 93);
+    background: linear-gradient(25deg, rgba(39, 0, 93, 1) 0%, rgba(148, 0, 255, 1) 100%);
+    color: white;
+}
+
+.list-container {
+    display: flex;
+
+    justify-content: flex-end;
+
+    list-style: none;
+}
+
+li {
+    margin-right: 20px;
+}
+
+.list-container li a {
+    text-decoration: none;
+    color: white;
+    position: relative;
+    /* Add position relative for animation */
+    transition: color 0.3s ease;
+    /* Add a smooth transition */
+}
+
+.list-container li a:hover {
+    background-color: #5D12D2;
+ 
+}
+
+
+.home-container h1 {
+    font-size: 3rem;
+    letter-spacing: 5px;
+    font-weight: 750;
+}
+
+.home-container h1 img {
+    max-width: 5rem;
+}
+
+.home-container {
+    font-size: 1.5rem;
+    text-align: center;
+    color: white;
+
+}
+
+.form-container {
+    display: flex;
+    justify-content: center;
+}
+
+input {
+    min-height: 4rem;
+    min-width: 25rem;
+    margin: 0 10px;
+    border-radius: 10px;
+    padding: 5px;
+    font-size: 1.5rem;
+}
+
+button {
+    padding: 17px 40px;
+    border-radius: 50px;
+    border: 0;
+    background-color: white;
+    box-shadow: rgb(0 0 0 / 5%) 0 0 8px;
+    letter-spacing: 1.5px;
+    text-transform: uppercase;
+    font-size: 15px;
+    transition: all .5s ease;
+}
+
+button:hover {
+    cursor: pointer;
+    letter-spacing: 3px;
+    /* background-color: hsl(120, 80%, 20%); */
+    background-color: lime;
+    color: hsl(0, 0%, 100%);
+    box-shadow: grey 0px 7px 29px 0px;
+}
+
+button:active {
+    letter-spacing: 3px;
+    background-color: hsl(261deg 80% 48%);
+    color: hsl(0, 0%, 100%);
+    box-shadow: rgb(93 24 220) 0px 0px 0px 0px;
+    transform: translateY(10px);
+    transition: 100ms;
+}
+
+.about-container {
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 45%;
+}
+
+.about-container h1 {
+    font-size: 3rem;
+    letter-spacing: 5px;
+    font-weight: 750;
+}
+
+.about-container p {
+    font-size: 1.5rem;
+}
+
+.image-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    /* Adjust the spacing between the images */
+}
+
+.image-container img {
+    border-radius: 50%;
+    /* Make the images circular */
+    width: auto;
+    /* Let the width adjust to maintain the aspect ratio */
+    height: 200px;
+    /* Set a fixed height (adjust as needed) */
+    transition: transform 0.3s, box-shadow 0.3s;
+    /* Add a smooth transition effect */
+}
+
+.image-container img:hover {
+    transform: scale(1.1);
+    /* Enlarge the image on hover */
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.7);
+    /* Add a shadow on hover */
+}
+
+.quote-container {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    width: 50vw;
+    margin: auto;
+    /* Center the text horizontally */
+}
+
+.quote {
+    font-family: 'Bad Script', cursive;
+    font-size: 2rem;
+}
+
+.author {
+    font-size: 1.3rem;
+    text-align: right;
+    /* Position the author text to the right */
+    margin-top: 10px;
+    /* Add some top margin for spacing */
+}
+
+.footer {
+    margin-top: 10px;
+    text-align: center;
+    color: white;
+    padding: 20px;
+    /* Add padding to create space for the footer */
+    background-color: rgba(0, 0, 0, 0.5);
+    /* Optional: Add a semi-transparent background */
+}
+
+.invalid-container {
+    width: 50%;
+    margin: auto;
+    font-size: 2rem;
+}
+
+.invalid-container a {
+    text-decoration: none;
+}
+
+.invalid-h1 {
+    text-align: center;
+    font-size: 3rem;
+    margin-bottom: 5rem;
+
+}
+
+.alternate-search-container {
+    font-size: 2rem;
+    text-align: center;
+}
